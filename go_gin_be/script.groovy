@@ -14,14 +14,14 @@ pipeline {
             }
         }
 
-        stage('Deploy Container') {
-            steps {
-                sh'''
-                    docker rm go_gin_be -f || true
-                    docker run --name go_gin_be -d -p 8002:8080 go_gin_be_image
-                '''
-            }
-        }
+        // stage('Deploy Container') {
+        //     steps {
+        //         sh'''
+        //             docker rm go_gin_be -f || true
+        //             docker run --name go_gin_be -d -p 8002:8080 go_gin_be_image
+        //         '''
+        //     }
+        // }
         
         stage('Deploy Container') {
             steps {
