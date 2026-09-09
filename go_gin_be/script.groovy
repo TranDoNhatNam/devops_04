@@ -23,12 +23,12 @@ pipeline {
             }
         }
         
-        // stage('Deploy Container') {
-        //     steps {
-        //         // chuyển image qua bên server run docker save | load
-        //         sh'''
-        //         '''
-        //     }
-        // }
+        stage('Deploy Container') {
+            steps {
+                // chuyển image qua bên server run docker save | load
+                sh'''
+                '''
+            }
+        }
     }
 }
